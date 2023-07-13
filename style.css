@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     outline: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -460,9 +461,12 @@ main {
 .all-in-one {
     margin-top: 8rem;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
-.all-in-one .left-container {
+.all-in-one .left-container, .all-in-one .right-container {
     width: 50%;
     padding: 4rem;
     background-color: #022531;
@@ -491,13 +495,61 @@ main {
     gap: 1rem;
 }
 
-.app {
-    
+.lcon-content .call-to-action a, .app a {
+    text-decoration: none;
+    /* color: #79b3c7; */
+    color: #fafafa;
 }
+
+.lcon-content .call-to-action .sign-up:hover a, .app:hover a {
+    color: #050505;
+}
+
+.app {
+    margin-inline: 9rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
 
 .call-to-action button {
     font-size: 1rem;
 }
 
+
+.all-in-one .right-container {
+    background-color: #02151b;
+    display: grid;
+    place-items: center;
+}
+
+.all-in-one .right-container .rcon-content {
+    width: 80%;
+    margin: 2rem auto 1rem;
+}
+
+.all-in-one .right-container .rcon-content img {
+    width: 100%;
+    border: 2px solid #29a7d1;
+    border-radius: 10px;
+}
+
+.right-container img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 5rem;
+    width: 100%;
+    /* background-color: ; */
+    border-top: 3px solid #2a6174;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 200px;
+}
 
 
