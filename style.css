@@ -167,7 +167,7 @@ main {
     gap: 2rem;
 }
 
-.hero .hero-cal .call-to-action .sign-up {
+.sign-up {
     padding: .5em 2.5em;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -182,7 +182,7 @@ main {
     cursor: pointer;
 }
 
-.hero .hero-cal .call-to-action .sign-up:hover {
+.sign-up:hover {
     text-shadow: 0 4px 10px #97d8c9;
     color: #050505;
     background-color: #97d8c9;
@@ -190,7 +190,7 @@ main {
     border-color: #0E1F25;
 }
 
-.hero .hero-cal .call-to-action .read-more {
+.read-more {
     text-decoration: none;
     display: flex;
     gap: .5rem;
@@ -198,17 +198,17 @@ main {
     align-items: center;
 }
 
-.hero .hero-cal .call-to-action .read-more svg {
+.read-more svg {
     opacity: 0;
     transform: translateX(-20px);
     transition: all 400ms ease-in-out;
 }
 
-.hero .hero-cal .call-to-action .read-more:hover svg {
+.read-more:hover svg {
     opacity: 1;
     transform: translateX(0) rotate(90deg);
     fill: #97d8c9;
-    animation: arrow 2s ease-in-out .4s;
+    animation: arrow 2s ease-in-out .4s forwards infinite;
 }
 
 @keyframes arrow {
@@ -217,11 +217,11 @@ main {
     }
 
     50% {
-        transform: translateX(10px);
+        transform: translateX(10px) rotate(90deg);
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(0px) rotate(90deg);
     }
 }
 
@@ -454,4 +454,50 @@ main {
     background-color: #474747;
     box-shadow: 0 0 10px #1294c37e;
 }
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+.all-in-one {
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.all-in-one .left-container {
+    width: 50%;
+    padding: 4rem;
+    background-color: #022531;
+    /* transform: translateY(-15%); */
+    border: 2px solid #0d98c7;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 1px #0d98c7;
+}
+
+.all-in-one .left-container .lcon-content h1{
+    font-size: 2.5rem;
+    color: #dadada;
+    margin-block: 1rem;
+    text-shadow: 0 4px 10px #97d8c963;
+}
+
+.all-in-one .left-container .lcon-content p {
+    line-height: 1.2em;
+    font-size: 20px;
+    color: #79b3c7;
+    /* text-shadow: 0 4px 10px #97d8c9; */
+}
+
+.lcon-content .call-to-action {
+    display: flex;
+    gap: 1rem;
+}
+
+.app {
+    
+}
+
+.call-to-action button {
+    font-size: 1rem;
+}
+
+
 
